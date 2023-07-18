@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation";
 import Slideshow from "./components/Slideshow";
 import CardContainer from "./components/CardContainer";
 import ArticleContainer from "./components/ArticleContainer";
+import Divider from "./components/Divider";
 
 const getTheme = () => {
   if (localStorage.getItem("theme")) {
@@ -28,15 +29,15 @@ function App() {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  //https://bootstrapmade.com/demo/ZenBlog/
-
   return (
     <>
       <Navigation variant={theme} changeTheme={changeTheme} />
       <div className="main">
         <Slideshow />
-        <ArticleContainer variant={theme} changeTheme={changeTheme} />       
-        <CardContainer variant={theme} changeTheme={changeTheme} />       
+        <Divider variant={theme} changeTheme={changeTheme} />
+        <ArticleContainer variant={theme} changeTheme={changeTheme} />
+        <Divider variant={theme} changeTheme={changeTheme} />
+        <CardContainer variant={theme} changeTheme={changeTheme} />
       </div>
     </>
   );

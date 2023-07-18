@@ -176,6 +176,19 @@ p {
   font-size: 0.875em;
 }
 
+.articleContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 550px) {
+  .articleContainer {
+    flex-direction: column;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .main {
     max-width: 1200px;
@@ -255,8 +268,17 @@ p {
   z-index: 999;
 }
 
-.articleContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
+.divider {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  height: 30px;
+  margin-top: 30px;
+}
+
+.divider_light {
+  border-top: 1px solid #ccc;
+}
+
+.divider_dark {
+  border-top: 1px solid #444;
 }

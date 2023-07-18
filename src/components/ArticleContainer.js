@@ -6,7 +6,9 @@ const ArticleContainer = ({ variant, changeTheme }) => {
   return (
     <>
       <section className="articleContainer">
-        <div className="col-12 col-md-5 ">
+        <div
+          className="col-12 col-md-6 "
+        >
           <Article
             variant={variant}
             title="dsfdsfsd"
@@ -15,10 +17,10 @@ const ArticleContainer = ({ variant, changeTheme }) => {
           />
         </div>
 
-        <div className="col-12 col-md-5 ">
+        <div className="col-12 col-md-6 ">
           <div className="row">
-            {data.slice(1,5).map((el, index) => (
-              <div className="col-6" key={el.id}>
+            {data.slice(1, 5).map((el, index) => (
+              <div className="col-12 col-md-6" key={el.id}>
                 <Article variant={variant} {...el} />
               </div>
             ))}
