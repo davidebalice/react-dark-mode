@@ -4,6 +4,7 @@ import Slideshow from "./components/Slideshow";
 import CardContainer from "./components/CardContainer";
 import ArticleContainer from "./components/ArticleContainer";
 import Divider from "./components/Divider";
+import Footer from "./components/Footer";
 
 const getTheme = () => {
   if (localStorage.getItem("theme")) {
@@ -39,6 +40,7 @@ function App() {
         <Divider variant={theme} changeTheme={changeTheme} />
         <CardContainer variant={theme} changeTheme={changeTheme} />
       </div>
+      <Footer />
     </>
   );
 }

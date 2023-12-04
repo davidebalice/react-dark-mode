@@ -282,3 +282,17 @@ p {
 .divider_dark {
   border-top: 1px solid #444;
 }
+
+.footer {
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #212529;
+  margin-top: 60px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
